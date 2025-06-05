@@ -1,0 +1,12 @@
+name: approval
+on:
+  push:
+    branches: approval
+jobs:
+  approval:
+    runs-on: ubuntu-latest
+    environment: 
+      name: approval
+    steps:
+      - name: approval stage
+        run: echo "approval given"
