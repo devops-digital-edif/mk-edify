@@ -1,5 +1,7 @@
 name: notification
-on: workflow_dispatch
+on: 
+  push:
+    branches: notification    
 jobs:
   slack:
     runs-on: ubuntu-latest
