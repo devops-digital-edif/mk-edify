@@ -9,6 +9,7 @@ jobs:
       - name: Approval Required
         run: echo "approval Given"
   build:
+    needs: approval
     runs-on: ubuntu-latest
     steps:
       - name: Clone Code
